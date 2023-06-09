@@ -9,4 +9,15 @@ import (
 func main() {
 	account := account.CreateAccount("juwan")
 	fmt.Println(account)
+
+	account.Deposit(100)
+	fmt.Println(account.Balance())
+
+	// drawError := account.Withdraw(200)
+	// if drawError != nil {
+	// 	log.Fatalln(drawError)
+	// }
+
+	fmt.Println(account)
+
 }
